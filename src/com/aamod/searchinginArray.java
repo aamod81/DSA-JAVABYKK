@@ -1,11 +1,21 @@
 package com.aamod;
 
-import java.util.Scanner;
-
-public class array {
+public class searchinginArray {
     public static void main(String[] args) {
-        Scanner sc=new Scanner(System.in);
-        int[] roll ={1,2,3,4,5};
-        System.out.println(roll [3]);
+        int[] nums = {2, 4, 5, 44, 66, 5, 55, 667, 776, 99, 89};
+        int target = 667;
+        int search = linearSearch(nums, target);
+        System.out.println(search);
+    }
+
+    static int linearSearch(int[] arr, int target) {
+        if (arr.length == 0)
+            return -1;
+
+        for (int index = 0; index < arr.length; index++) {
+            if (arr[index] == target)
+                return index;
+        }
+        return target;
     }
 }
