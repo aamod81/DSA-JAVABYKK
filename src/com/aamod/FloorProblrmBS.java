@@ -1,16 +1,17 @@
 package com.aamod;
 
-import static java.util.Arrays.binarySearch;
-
-public class BinarySearchCeilingProblem {
+public class FloorProblrmBS {
     public static void main(String[] args) {
         //ceiling problem
         int[] arr = {2,3,5,9,14,16,18};
-        int target = 15;
-        int ans = ceilingproblem(arr,target);
+        int target = 1;
+        int ans = floor(arr,target);
         System.out.println(ans);
     }
-    static int ceilingproblem(int[] arr, int target) {
+    static int floor(int[] arr, int target) {
+        if (target<arr[arr.length-1]){
+            return-1;
+        }
         int start = 0;
         int end = arr.length - 1;
 
@@ -29,5 +30,5 @@ public class BinarySearchCeilingProblem {
 
         return start;
     }
-}
 
+}
