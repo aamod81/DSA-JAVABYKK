@@ -9,9 +9,6 @@ public class FloorProblrmBS {
         System.out.println(ans);
     }
     static int floor(int[] arr, int target) {
-        if (target<arr[arr.length-1]){
-            return-1;
-        }
         int start = 0;
         int end = arr.length - 1;
 
