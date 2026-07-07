@@ -1,6 +1,9 @@
+package com.aamod;
+
 public class PeakIndexInAMountainArray {
     static int peakIndexInAMountainArray(int[] arr) {
 
+        return 0;
     }
     public int peakIndexInMountainArray(int[] arr) {
         int start = 0;
