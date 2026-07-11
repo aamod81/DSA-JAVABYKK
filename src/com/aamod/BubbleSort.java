@@ -2,7 +2,7 @@ package com.aamod;
 
 import java.util.Arrays;
 
-public class BubbleShort {
+public class BubbleSort {
     public static void main(String[] args) {
         int[] arr={7,-55,-88,1,4};
         bubble(arr);
